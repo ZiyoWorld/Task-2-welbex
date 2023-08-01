@@ -7,6 +7,8 @@
     width: 100%;
     background-color: #0E1014;
     margin: 0 auto;
+    height: 100%;
+    padding: 5px 0;
 }
 header{
     width: 1140px;
@@ -127,11 +129,77 @@ main{
 .main-right-btn:active{
     transform: translate(2px, 3px);
 }
-
+footer{
+    width: 1140px;
+    margin: 45px auto;
+}
+.footer-items{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.title{
+    color:gray;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menyu{
+    display: flex;
+    justify-content: flex-start;
+}
+.menyu .menyu-left, .menyu-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-direction: column;
+}
+.menyu div a {
+    color: #fff;
+    margin: 5px 0;
+}
+.menyu-left{
+    margin-right: 50px;
+}
+.footer-left h4{
+    margin-bottom: 10px;
+}
+.footer-left p{
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.footer-right{
+    color: #fff;
+    text-align: end;
+}
+.footer-right p{
+    margin: 10px 0;
+}
+ol{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer-icons li{
+    margin: 5px 10px;
+}
+.footer-subtitle{
+    width: 1140px;
+    margin: 45px auto;
+    text-align: end;
+    color: #fff;   
+}
 @media screen and (max-width: 320px) {
     .container{
         max-width: 320px;
         width: 100%;
+        height: auto;
+        padding: 5px 0;
     }
     .logo_subtitle{
         display: none;
@@ -160,5 +228,49 @@ main{
     }
     .sertifikat{
         display: none;
+    }
+    main{
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .main-left h1{
+        font-size: 36px;
+    }
+    .main-left h2{
+        font-size: 36px;
+    }
+    .main-left p{
+        width: 95%;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .main-right{
+        width: 100%;
+        margin: 15px 0;
+        padding: 0 16px;
+    }
+    .main-right-btn{
+        display: none;  
+    }
+    .main-right-items p{
+        display: none;
+    }
+    footer .footer-items{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer-items{
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+    }
+    .footer-subtitle{
+        width: 100%;
+        text-align: center;
     }
 }
